@@ -18,4 +18,4 @@ Plantážníci
 Licence
 -------
 
-Tento program je poskytovan pod licencí [GNU General Public License v3.0](LICENSE)
+Tento program je poskytován pod licencí [GNU General Public License v3.0](LICENSE)
