@@ -1,12 +1,12 @@
 # IVS-project-2
 IVS team project
 
-Prostredi
+Prostředí
 ---------
 
 Windows 64bit
 
-Autori
+Autoři
 ------
 
 Plantážníci
