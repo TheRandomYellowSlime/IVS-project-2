@@ -1,0 +1,6 @@
+C:\Users\Pipex\source\repos\PlantazniciMathLib\PlantazniciMathLib\bin\Debug\PlantazniciMathLib.dll
+C:\Users\Pipex\source\repos\PlantazniciMathLib\PlantazniciMathLib\bin\Debug\PlantazniciMathLib.pdb
+C:\Users\Pipex\source\repos\PlantazniciMathLib\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.csprojAssemblyReference.cache
+C:\Users\Pipex\source\repos\PlantazniciMathLib\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.csproj.CoreCompileInputs.cache
+C:\Users\Pipex\source\repos\PlantazniciMathLib\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.dll
+C:\Users\Pipex\source\repos\PlantazniciMathLib\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.pdb
