@@ -1,0 +1,4 @@
+xkriva36 ... (Testy, Program)
+xkunzm02 ... (Dokumentace, Debugging)
+xpleva09 ... (Makefile, matematicka knihovna)
+xpraza11 ... (GUI, Napoveda)
