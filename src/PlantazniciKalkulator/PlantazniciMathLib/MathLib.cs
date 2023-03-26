@@ -20,12 +20,12 @@ namespace Plantaznici.Kalkulacka.MathLib
     {
         public double Scitani(double scitanecA, double scitanecB)
         {
-            return 0;
+            return scitanecA + scitanecB;
         }
 
         public double Odcitani(double mensenec, double mensitel)
         {
-            return 0;
+            return mensenec - mensitel;
         }
 
         public double Nasobeni(double cinitelA, double cinitelB)
