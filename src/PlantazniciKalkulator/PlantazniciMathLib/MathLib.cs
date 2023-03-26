@@ -30,17 +30,36 @@ namespace Plantaznici.Kalkulacka.MathLib
 
         public double Nasobeni(double cinitelA, double cinitelB)
         {
-            return 0;
+            return cinitelA * cinitelB;
         }
 
         public double Deleni(double delenec, double delitel)
         {
-            return 0;
+            if (delitel == 0)
+            {
+                throw new System.DivideByZeroException();
+            }
+            else
+            {
+                return delenec / delitel;
+            }
         }
 
         public double Faktorial(double n)
         {
-            return 0;
+            if (n < 0)
+            {
+                double faktorial = 1;
+                for (uint i = 1; i <= n; i++)
+                {
+                    faktorial *= i;
+                }
+                return faktorial;
+            }
+            else
+            {
+                throw new System.ArgumentException("Faktorial zaporneho cisla neni definovan");
+            }
         }
 
         public double Umocneni(double zaklad, double exponent)
