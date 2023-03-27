@@ -49,14 +49,21 @@ namespace Plantaznici.Kalkulacka.MathLib
         {
             if (n < 0)
             {
-                double faktorial = 1;
-                for (uint i = 1; i <= n; i++)
+                if (n % 1 != 0)
                 {
-                    faktorial *= i;
+                    double faktorial = 1;
+                    for (uint i = 1; i <= n; i++)
+                    {
+                        faktorial *= i;
+                    }
+                    return faktorial;
                 }
-                return faktorial;
+                else
+                {
+                    throw new System.ArgumentException("Faktorial je definovan pouze pro prirozena cisla");
+                }
             }
-            else
+            elses
             {
                 throw new System.ArgumentException("Faktorial zaporneho cisla neni definovan");
             }
@@ -64,6 +71,7 @@ namespace Plantaznici.Kalkulacka.MathLib
 
         public double Umocneni(double zaklad, double exponent)
         {
+
             return 0;
         }
 
