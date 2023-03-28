@@ -5,3 +5,12 @@ C:\Users\Pipex\source\repos\PlantazniciMathLib\PlantazniciMathLib\obj\Debug\Plan
 C:\Users\Pipex\source\repos\PlantazniciMathLib\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.pdb
 C:\Users\Pipex\source\repos\PlantazniciMathLib\PlantazniciMathLib\obj\Debug\Plantaznici.Kalkulacka.MathLib.csprojAssemblyReference.cache
 C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.pdb
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\Plantaznici.Kalkulacka.MathLib.csproj.AssemblyReference.cache
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\Plantaznici.Kalkulacka.MathLib.csproj.CoreCompileInputs.cache
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\PlantazniciMathLib.dll
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\PlantazniciMathLib.pdb
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\Plantaznici.Kalkulacka.exe
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\Plantaznici.Kalkulacka.pdb
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\Plantaznici.Kalkulacka.exe.config
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\Plantaznici.Kalkulacka.MathLib.csproj.CopyComplete
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.dll

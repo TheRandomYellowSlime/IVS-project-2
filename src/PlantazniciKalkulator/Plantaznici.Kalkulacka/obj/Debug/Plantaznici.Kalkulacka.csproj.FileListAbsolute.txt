@@ -1,0 +1,10 @@
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\bin\Debug\Plantaznici.Kalkulacka.exe.config
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\bin\Debug\Plantaznici.Kalkulacka.exe
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\bin\Debug\Plantaznici.Kalkulacka.pdb
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.AssemblyReference.cache
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.SuggestedBindingRedirects.cache
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.Properties.Resources.resources
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.GenerateResource.cache
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.CoreCompileInputs.cache
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.exe
+C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.pdb
