@@ -37,7 +37,7 @@ namespace Plantaznici.Kalkulacka.MathLib
         {
             if (delitel == 0)
             {
-                throw new System.DivideByZeroException();
+                throw new DivideByZeroException();
             }
             else
             {
@@ -47,7 +47,7 @@ namespace Plantaznici.Kalkulacka.MathLib
 
         public double Faktorial(double n)
         {
-            if (n > 0)
+            if (n >= 0)
             {
                 if (n == (int)n)
                 {
@@ -60,18 +60,33 @@ namespace Plantaznici.Kalkulacka.MathLib
                 }
                 else
                 {
-                    throw new System.ArgumentException("Faktorial je definovan pouze pro prirozena cisla");
+                    throw new ArgumentException("Faktorial je definovan pouze pro prirozena cisla");
                 }
             }
             else
             {
-                throw new System.ArgumentException("Faktorial zaporneho cisla neni definovan");
+                throw new ArgumentException("Faktorial zaporneho cisla neni definovan");
             }
         }
 
         public double Umocneni(double zaklad, double exponent)
         {
             double vysledek = 1;
+            if (exponent == 0)
+            {
+                if (zaklad == 0)
+                {
+                    throw new ArgumentException("Nedefinovany vysledek");
+                }
+                else if (zaklad < 0)
+                {
+                    return -1;
+                }
+                else
+                {
+                    return 1;
+                }
+            }
 
             if (exponent > 0)
             {
@@ -86,12 +101,12 @@ namespace Plantaznici.Kalkulacka.MathLib
                 {
                     for (int i = 0; i > exponent; i--)
                     {
-                        vysledek /= zaklad;
+                        vysledek = vysledek / zaklad;
                     }
                 }
                 else 
                 {
-                    throw new System.DivideByZeroException();
+                    throw new ArgumentException("Deleni nulou");
                 }
             }
 
@@ -102,20 +117,38 @@ namespace Plantaznici.Kalkulacka.MathLib
         {
             if (exponent == 0)
             {
-                return double.NaN;
+                throw new ArgumentException("Nelze mit odmocninu s nulovym exponentem");
             }
             if (zaklad == 0)
             {
-                return 0;
+                if (exponent < 0)
+                {
+                    throw new ArgumentException("Deleni nulou");
+                }
+                else
+                {
+                    return 0;
+                }
             }
+
+            if (exponent % 2 == 0 && zaklad < 0)
+            {
+                throw new ArgumentException("Nelze odmocnit zaporne cislo sudym exponentem");
+            }
+
+            if (exponent < 0)
+            {
+                return 1 / Odmocneni(zaklad, -exponent);
+            }
+
             double x = zaklad / exponent;
             double xPredchozi;
-            double odchylka = 0.000001;
+            double odchylka = 0.0000001;
             do
             {
                 xPredchozi = x;
-                x = ((exponent - 1.0) * x + zaklad / MathLib.Umocneni(x, exponent - 1)) / exponent;
-            } while (MathLib.AbsHodnota(x - xPredchozi) > odchylka);
+                x = ((exponent - 1.0) * x + zaklad / Umocneni(x, exponent - 1)) / exponent;
+            } while (AbsHodnota(x - xPredchozi) > odchylka);
             return x;
         }
 

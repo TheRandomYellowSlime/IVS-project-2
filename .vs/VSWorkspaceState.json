@@ -3,10 +3,14 @@
     "",
     "\\src",
     "\\src\\PlantazniciKalkulator",
-    "\\src\\PlantazniciKalkulator\\PlantazniciMathLib",
     "\\src\\PlantazniciKalkulator\\PlantazniciMathLib.TDDTests",
-    "\\src\\PlantazniciKalkulator\\PlantazniciMathLib\\Properties"
+    "\\src\\PlantazniciKalkulator\\PlantazniciMathLib.TDDTests\\bin",
+    "\\src\\PlantazniciKalkulator\\PlantazniciMathLib.TDDTests\\bin\\Debug",
+    "\\src\\PlantazniciKalkulator\\PlantazniciMathLib.TDDTests\\obj",
+    "\\src\\PlantazniciKalkulator\\PlantazniciMathLib.TDDTests\\obj\\Debug",
+    "\\src\\PlantazniciKalkulator\\PlantazniciMathLib.TDDTests\\obj\\Release",
+    "\\src\\PlantazniciKalkulator\\PlantazniciMathLib.TDDTests\\Properties"
   ],
-  "SelectedNode": "\\src\\PlantazniciKalkulator\\PlantazniciMathLib\\MathLib.cs",
+  "SelectedNode": "\\src\\PlantazniciKalkulator\\PlantazniciKalkulator.sln",
   "PreviewInSolutionExplorer": false
 }
