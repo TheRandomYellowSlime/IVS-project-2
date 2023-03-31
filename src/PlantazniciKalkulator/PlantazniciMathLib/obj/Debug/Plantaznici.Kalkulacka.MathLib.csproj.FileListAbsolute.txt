@@ -14,3 +14,13 @@ C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\Plantazni
 C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\Plantaznici.Kalkulacka.exe.config
 C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\Plantaznici.Kalkulacka.MathLib.csproj.CopyComplete
 C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.dll
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\PlantazniciMathLib.dll
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\PlantazniciMathLib.pdb
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\Plantaznici.Kalkulacka.exe
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\Plantaznici.Kalkulacka.pdb
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\Plantaznici.Kalkulacka.exe.config
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\Plantaznici.Kalkulacka.MathLib.csprojAssemblyReference.cache
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\Plantaznici.Kalkulacka.MathLib.csproj.CoreCompileInputs.cache
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\Plantaznici.Kalkulacka.MathLib.csproj.CopyComplete
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.dll
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.pdb
