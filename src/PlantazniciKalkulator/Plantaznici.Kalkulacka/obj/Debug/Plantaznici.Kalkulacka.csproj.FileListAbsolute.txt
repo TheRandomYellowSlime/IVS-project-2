@@ -8,3 +8,12 @@ C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\Plantazni
 C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.CoreCompileInputs.cache
 C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.exe
 C:\Users\krple\Documents\GitHub\TheRandomYellowSlime\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.pdb
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\bin\Debug\Plantaznici.Kalkulacka.exe.config
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\bin\Debug\Plantaznici.Kalkulacka.exe
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\bin\Debug\Plantaznici.Kalkulacka.pdb
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csprojAssemblyReference.cache
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.Properties.Resources.resources
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.GenerateResource.cache
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.CoreCompileInputs.cache
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.exe
+C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.pdb
