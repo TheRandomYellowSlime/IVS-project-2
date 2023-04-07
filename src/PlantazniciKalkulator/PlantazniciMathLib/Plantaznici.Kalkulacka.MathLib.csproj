@@ -44,11 +44,5 @@
     <Compile Include="MathLib.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Plantaznici.Kalkulacka\Plantaznici.Kalkulacka.csproj">
-      <Project>{b622c7ae-97d3-47af-a499-1e7317fb1b32}</Project>
-      <Name>Plantaznici.Kalkulacka</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

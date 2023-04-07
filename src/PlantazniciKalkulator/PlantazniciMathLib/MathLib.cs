@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace Plantaznici.Kalkulacka.MathLib
 {
-    public class MathLib
+    public class MatematickaKnihovna
     {
         public double Scitani(double scitanecA, double scitanecB)
         {
