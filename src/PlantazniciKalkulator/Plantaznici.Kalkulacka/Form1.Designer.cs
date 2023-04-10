@@ -72,7 +72,7 @@ namespace Plantaznici.Kalkulacka
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 41);
+            this.panel1.Size = new System.Drawing.Size(680, 50);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouse_Down);
@@ -89,7 +89,7 @@ namespace Plantaznici.Kalkulacka
             this.BtnHint.Location = new System.Drawing.Point(0, 0);
             this.BtnHint.Margin = new System.Windows.Forms.Padding(0);
             this.BtnHint.Name = "BtnHint";
-            this.BtnHint.Size = new System.Drawing.Size(38, 41);
+            this.BtnHint.Size = new System.Drawing.Size(51, 50);
             this.BtnHint.TabIndex = 2;
             this.BtnHint.TabStop = false;
             this.BtnHint.Text = "?";
@@ -104,10 +104,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnMinimalize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMinimalize.Font = new System.Drawing.Font("Yu Gothic UI", 14F);
             this.BtnMinimalize.ForeColor = System.Drawing.Color.White;
-            this.BtnMinimalize.Location = new System.Drawing.Point(436, 0);
+            this.BtnMinimalize.Location = new System.Drawing.Point(581, 0);
             this.BtnMinimalize.Margin = new System.Windows.Forms.Padding(0);
             this.BtnMinimalize.Name = "BtnMinimalize";
-            this.BtnMinimalize.Size = new System.Drawing.Size(38, 41);
+            this.BtnMinimalize.Size = new System.Drawing.Size(51, 50);
             this.BtnMinimalize.TabIndex = 1;
             this.BtnMinimalize.TabStop = false;
             this.BtnMinimalize.Text = "-";
@@ -123,10 +123,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnExit.Font = new System.Drawing.Font("Yu Gothic UI", 14F);
             this.BtnExit.ForeColor = System.Drawing.Color.White;
-            this.BtnExit.Location = new System.Drawing.Point(473, 0);
+            this.BtnExit.Location = new System.Drawing.Point(631, 0);
             this.BtnExit.Margin = new System.Windows.Forms.Padding(0);
             this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(38, 41);
+            this.BtnExit.Size = new System.Drawing.Size(51, 50);
             this.BtnExit.TabIndex = 0;
             this.BtnExit.TabStop = false;
             this.BtnExit.Text = "×";
@@ -136,10 +136,10 @@ namespace Plantaznici.Kalkulacka
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 119);
+            this.panel3.Location = new System.Drawing.Point(0, 146);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(510, 16);
+            this.panel3.Size = new System.Drawing.Size(680, 20);
             this.panel3.TabIndex = 6;
             // 
             // textBox1
@@ -150,11 +150,11 @@ namespace Plantaznici.Kalkulacka
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Yu Gothic UI", 38F);
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(0, 62);
+            this.textBox1.Location = new System.Drawing.Point(0, 76);
             this.textBox1.Margin = new System.Windows.Forms.Padding(0);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(510, 57);
+            this.textBox1.Size = new System.Drawing.Size(680, 70);
             this.textBox1.TabIndex = 5;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -162,10 +162,10 @@ namespace Plantaznici.Kalkulacka
             // 
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 41);
+            this.panel2.Location = new System.Drawing.Point(0, 50);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(510, 21);
+            this.panel2.Size = new System.Drawing.Size(680, 26);
             this.panel2.TabIndex = 4;
             // 
             // label1
@@ -174,10 +174,9 @@ namespace Plantaznici.Kalkulacka
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(510, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(680, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 19);
+            this.label1.Size = new System.Drawing.Size(0, 23);
             this.label1.TabIndex = 0;
             // 
             // BtnCA
@@ -189,10 +188,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnCA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCA.Font = new System.Drawing.Font("Yu Gothic UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.BtnCA.Location = new System.Drawing.Point(257, 139);
+            this.BtnCA.Location = new System.Drawing.Point(509, 171);
             this.BtnCA.Margin = new System.Windows.Forms.Padding(0);
             this.BtnCA.Name = "BtnCA";
-            this.BtnCA.Size = new System.Drawing.Size(120, 53);
+            this.BtnCA.Size = new System.Drawing.Size(159, 65);
             this.BtnCA.TabIndex = 10;
             this.BtnCA.TabStop = false;
             this.BtnCA.Text = "AC";
@@ -209,10 +208,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnFact.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFact.ForeColor = System.Drawing.Color.White;
             this.BtnFact.Image = global::Plantaznici.Kalkulacka.Properties.Resources.img3;
-            this.BtnFact.Location = new System.Drawing.Point(257, 196);
+            this.BtnFact.Location = new System.Drawing.Point(343, 241);
             this.BtnFact.Margin = new System.Windows.Forms.Padding(0);
             this.BtnFact.Name = "BtnFact";
-            this.BtnFact.Size = new System.Drawing.Size(120, 53);
+            this.BtnFact.Size = new System.Drawing.Size(160, 65);
             this.BtnFact.TabIndex = 12;
             this.BtnFact.TabStop = false;
             this.BtnFact.UseVisualStyleBackColor = false;
@@ -228,10 +227,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnAbs.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAbs.ForeColor = System.Drawing.Color.White;
             this.BtnAbs.Image = global::Plantaznici.Kalkulacka.Properties.Resources.img4;
-            this.BtnAbs.Location = new System.Drawing.Point(133, 139);
+            this.BtnAbs.Location = new System.Drawing.Point(343, 171);
             this.BtnAbs.Margin = new System.Windows.Forms.Padding(0);
             this.BtnAbs.Name = "BtnAbs";
-            this.BtnAbs.Size = new System.Drawing.Size(120, 53);
+            this.BtnAbs.Size = new System.Drawing.Size(160, 65);
             this.BtnAbs.TabIndex = 13;
             this.BtnAbs.TabStop = false;
             this.BtnAbs.UseVisualStyleBackColor = false;
@@ -248,10 +247,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnPow.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPow.ForeColor = System.Drawing.Color.White;
             this.BtnPow.Image = global::Plantaznici.Kalkulacka.Properties.Resources.img1;
-            this.BtnPow.Location = new System.Drawing.Point(8, 196);
+            this.BtnPow.Location = new System.Drawing.Point(11, 241);
             this.BtnPow.Margin = new System.Windows.Forms.Padding(0);
             this.BtnPow.Name = "BtnPow";
-            this.BtnPow.Size = new System.Drawing.Size(120, 53);
+            this.BtnPow.Size = new System.Drawing.Size(160, 65);
             this.BtnPow.TabIndex = 14;
             this.BtnPow.TabStop = false;
             this.BtnPow.UseVisualStyleBackColor = false;
@@ -267,10 +266,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnRoot.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRoot.ForeColor = System.Drawing.Color.White;
             this.BtnRoot.Image = global::Plantaznici.Kalkulacka.Properties.Resources.img2;
-            this.BtnRoot.Location = new System.Drawing.Point(133, 196);
+            this.BtnRoot.Location = new System.Drawing.Point(177, 241);
             this.BtnRoot.Margin = new System.Windows.Forms.Padding(0);
             this.BtnRoot.Name = "BtnRoot";
-            this.BtnRoot.Size = new System.Drawing.Size(120, 53);
+            this.BtnRoot.Size = new System.Drawing.Size(160, 65);
             this.BtnRoot.TabIndex = 15;
             this.BtnRoot.TabStop = false;
             this.BtnRoot.UseVisualStyleBackColor = false;
@@ -285,10 +284,10 @@ namespace Plantaznici.Kalkulacka
             this.Btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn7.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.Btn7.ForeColor = System.Drawing.Color.White;
-            this.Btn7.Location = new System.Drawing.Point(8, 254);
+            this.Btn7.Location = new System.Drawing.Point(11, 313);
             this.Btn7.Margin = new System.Windows.Forms.Padding(0);
             this.Btn7.Name = "Btn7";
-            this.Btn7.Size = new System.Drawing.Size(120, 53);
+            this.Btn7.Size = new System.Drawing.Size(160, 65);
             this.Btn7.TabIndex = 16;
             this.Btn7.TabStop = false;
             this.Btn7.Text = "7";
@@ -304,10 +303,10 @@ namespace Plantaznici.Kalkulacka
             this.Btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn8.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.Btn8.ForeColor = System.Drawing.Color.White;
-            this.Btn8.Location = new System.Drawing.Point(133, 254);
+            this.Btn8.Location = new System.Drawing.Point(177, 313);
             this.Btn8.Margin = new System.Windows.Forms.Padding(0);
             this.Btn8.Name = "Btn8";
-            this.Btn8.Size = new System.Drawing.Size(120, 53);
+            this.Btn8.Size = new System.Drawing.Size(160, 65);
             this.Btn8.TabIndex = 17;
             this.Btn8.TabStop = false;
             this.Btn8.Text = "8";
@@ -323,10 +322,10 @@ namespace Plantaznici.Kalkulacka
             this.Btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn9.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.Btn9.ForeColor = System.Drawing.Color.White;
-            this.Btn9.Location = new System.Drawing.Point(257, 254);
+            this.Btn9.Location = new System.Drawing.Point(343, 313);
             this.Btn9.Margin = new System.Windows.Forms.Padding(0);
             this.Btn9.Name = "Btn9";
-            this.Btn9.Size = new System.Drawing.Size(120, 53);
+            this.Btn9.Size = new System.Drawing.Size(160, 65);
             this.Btn9.TabIndex = 18;
             this.Btn9.TabStop = false;
             this.Btn9.Text = "9";
@@ -342,10 +341,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnDiv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDiv.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.BtnDiv.ForeColor = System.Drawing.Color.White;
-            this.BtnDiv.Location = new System.Drawing.Point(382, 196);
+            this.BtnDiv.Location = new System.Drawing.Point(509, 241);
             this.BtnDiv.Margin = new System.Windows.Forms.Padding(0);
             this.BtnDiv.Name = "BtnDiv";
-            this.BtnDiv.Size = new System.Drawing.Size(120, 53);
+            this.BtnDiv.Size = new System.Drawing.Size(160, 65);
             this.BtnDiv.TabIndex = 19;
             this.BtnDiv.TabStop = false;
             this.BtnDiv.Text = "÷";
@@ -361,10 +360,10 @@ namespace Plantaznici.Kalkulacka
             this.Btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn4.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.Btn4.ForeColor = System.Drawing.Color.White;
-            this.Btn4.Location = new System.Drawing.Point(8, 311);
+            this.Btn4.Location = new System.Drawing.Point(11, 383);
             this.Btn4.Margin = new System.Windows.Forms.Padding(0);
             this.Btn4.Name = "Btn4";
-            this.Btn4.Size = new System.Drawing.Size(120, 53);
+            this.Btn4.Size = new System.Drawing.Size(160, 65);
             this.Btn4.TabIndex = 20;
             this.Btn4.TabStop = false;
             this.Btn4.Text = "4";
@@ -380,10 +379,10 @@ namespace Plantaznici.Kalkulacka
             this.Btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn5.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.Btn5.ForeColor = System.Drawing.Color.White;
-            this.Btn5.Location = new System.Drawing.Point(133, 311);
+            this.Btn5.Location = new System.Drawing.Point(177, 383);
             this.Btn5.Margin = new System.Windows.Forms.Padding(0);
             this.Btn5.Name = "Btn5";
-            this.Btn5.Size = new System.Drawing.Size(120, 53);
+            this.Btn5.Size = new System.Drawing.Size(160, 65);
             this.Btn5.TabIndex = 21;
             this.Btn5.TabStop = false;
             this.Btn5.Text = "5";
@@ -399,10 +398,10 @@ namespace Plantaznici.Kalkulacka
             this.Btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn6.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.Btn6.ForeColor = System.Drawing.Color.White;
-            this.Btn6.Location = new System.Drawing.Point(257, 311);
+            this.Btn6.Location = new System.Drawing.Point(343, 383);
             this.Btn6.Margin = new System.Windows.Forms.Padding(0);
             this.Btn6.Name = "Btn6";
-            this.Btn6.Size = new System.Drawing.Size(120, 53);
+            this.Btn6.Size = new System.Drawing.Size(160, 65);
             this.Btn6.TabIndex = 22;
             this.Btn6.TabStop = false;
             this.Btn6.Text = "6";
@@ -418,10 +417,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnMul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMul.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.BtnMul.ForeColor = System.Drawing.Color.White;
-            this.BtnMul.Location = new System.Drawing.Point(382, 254);
+            this.BtnMul.Location = new System.Drawing.Point(509, 313);
             this.BtnMul.Margin = new System.Windows.Forms.Padding(0);
             this.BtnMul.Name = "BtnMul";
-            this.BtnMul.Size = new System.Drawing.Size(120, 53);
+            this.BtnMul.Size = new System.Drawing.Size(160, 65);
             this.BtnMul.TabIndex = 23;
             this.BtnMul.TabStop = false;
             this.BtnMul.Text = "×";
@@ -437,10 +436,10 @@ namespace Plantaznici.Kalkulacka
             this.Btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn1.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.Btn1.ForeColor = System.Drawing.Color.White;
-            this.Btn1.Location = new System.Drawing.Point(8, 369);
+            this.Btn1.Location = new System.Drawing.Point(11, 454);
             this.Btn1.Margin = new System.Windows.Forms.Padding(0);
             this.Btn1.Name = "Btn1";
-            this.Btn1.Size = new System.Drawing.Size(120, 53);
+            this.Btn1.Size = new System.Drawing.Size(160, 65);
             this.Btn1.TabIndex = 24;
             this.Btn1.TabStop = false;
             this.Btn1.Text = "1";
@@ -456,10 +455,10 @@ namespace Plantaznici.Kalkulacka
             this.Btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn2.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.Btn2.ForeColor = System.Drawing.Color.White;
-            this.Btn2.Location = new System.Drawing.Point(133, 369);
+            this.Btn2.Location = new System.Drawing.Point(177, 454);
             this.Btn2.Margin = new System.Windows.Forms.Padding(0);
             this.Btn2.Name = "Btn2";
-            this.Btn2.Size = new System.Drawing.Size(120, 53);
+            this.Btn2.Size = new System.Drawing.Size(160, 65);
             this.Btn2.TabIndex = 25;
             this.Btn2.TabStop = false;
             this.Btn2.Text = "2";
@@ -475,10 +474,10 @@ namespace Plantaznici.Kalkulacka
             this.Btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn3.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.Btn3.ForeColor = System.Drawing.Color.White;
-            this.Btn3.Location = new System.Drawing.Point(257, 369);
+            this.Btn3.Location = new System.Drawing.Point(343, 454);
             this.Btn3.Margin = new System.Windows.Forms.Padding(0);
             this.Btn3.Name = "Btn3";
-            this.Btn3.Size = new System.Drawing.Size(120, 53);
+            this.Btn3.Size = new System.Drawing.Size(160, 65);
             this.Btn3.TabIndex = 26;
             this.Btn3.TabStop = false;
             this.Btn3.Text = "3";
@@ -495,10 +494,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMinus.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.BtnMinus.ForeColor = System.Drawing.Color.White;
-            this.BtnMinus.Location = new System.Drawing.Point(382, 311);
+            this.BtnMinus.Location = new System.Drawing.Point(509, 383);
             this.BtnMinus.Margin = new System.Windows.Forms.Padding(0);
             this.BtnMinus.Name = "BtnMinus";
-            this.BtnMinus.Size = new System.Drawing.Size(120, 53);
+            this.BtnMinus.Size = new System.Drawing.Size(160, 65);
             this.BtnMinus.TabIndex = 27;
             this.BtnMinus.TabStop = false;
             this.BtnMinus.Text = "-";
@@ -514,10 +513,10 @@ namespace Plantaznici.Kalkulacka
             this.Btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn0.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.Btn0.ForeColor = System.Drawing.Color.White;
-            this.Btn0.Location = new System.Drawing.Point(8, 427);
+            this.Btn0.Location = new System.Drawing.Point(11, 526);
             this.Btn0.Margin = new System.Windows.Forms.Padding(0);
             this.Btn0.Name = "Btn0";
-            this.Btn0.Size = new System.Drawing.Size(120, 53);
+            this.Btn0.Size = new System.Drawing.Size(160, 65);
             this.Btn0.TabIndex = 28;
             this.Btn0.TabStop = false;
             this.Btn0.Text = "0";
@@ -533,10 +532,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnComma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnComma.Font = new System.Drawing.Font("Yu Gothic UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnComma.ForeColor = System.Drawing.Color.White;
-            this.BtnComma.Location = new System.Drawing.Point(133, 427);
+            this.BtnComma.Location = new System.Drawing.Point(177, 526);
             this.BtnComma.Margin = new System.Windows.Forms.Padding(0);
             this.BtnComma.Name = "BtnComma";
-            this.BtnComma.Size = new System.Drawing.Size(120, 53);
+            this.BtnComma.Size = new System.Drawing.Size(160, 65);
             this.BtnComma.TabIndex = 29;
             this.BtnComma.TabStop = false;
             this.BtnComma.Text = ",";
@@ -552,11 +551,12 @@ namespace Plantaznici.Kalkulacka
             this.BtnEq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEq.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.BtnEq.ForeColor = System.Drawing.Color.White;
-            this.BtnEq.Location = new System.Drawing.Point(257, 427);
+            this.BtnEq.Location = new System.Drawing.Point(343, 526);
             this.BtnEq.Margin = new System.Windows.Forms.Padding(0);
             this.BtnEq.Name = "BtnEq";
-            this.BtnEq.Size = new System.Drawing.Size(120, 53);
+            this.BtnEq.Size = new System.Drawing.Size(327, 65);
             this.BtnEq.TabIndex = 30;
+            this.BtnEq.TabStop = false;
             this.BtnEq.Text = "=";
             this.BtnEq.UseVisualStyleBackColor = false;
             this.BtnEq.Click += new System.EventHandler(this.BtnEq_Click);
@@ -570,10 +570,10 @@ namespace Plantaznici.Kalkulacka
             this.BtnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPlus.Font = new System.Drawing.Font("Yu Gothic UI", 24F);
             this.BtnPlus.ForeColor = System.Drawing.Color.White;
-            this.BtnPlus.Location = new System.Drawing.Point(382, 369);
+            this.BtnPlus.Location = new System.Drawing.Point(509, 454);
             this.BtnPlus.Margin = new System.Windows.Forms.Padding(0);
             this.BtnPlus.Name = "BtnPlus";
-            this.BtnPlus.Size = new System.Drawing.Size(120, 53);
+            this.BtnPlus.Size = new System.Drawing.Size(160, 65);
             this.BtnPlus.TabIndex = 31;
             this.BtnPlus.TabStop = false;
             this.BtnPlus.Text = "+";
@@ -582,10 +582,10 @@ namespace Plantaznici.Kalkulacka
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(510, 488);
+            this.ClientSize = new System.Drawing.Size(680, 601);
             this.Controls.Add(this.BtnPlus);
             this.Controls.Add(this.BtnEq);
             this.Controls.Add(this.BtnComma);
@@ -614,7 +614,7 @@ namespace Plantaznici.Kalkulacka
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

@@ -117,11 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>- k tomu a tomu udělejte to a to
-- bla bla bla . . .
-- nejlepší bude popsat chování až tehdy, kdy bude známá obsluha funkcí kalkulačky
-- případně se nemusí otevírat tohle nové okno, ale místo toho se může pouze kliknutím na hint button otevřít pdf s uživatelskou obsluhou</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Postup obsluhy:
+    1) Zadejte operand
+    2) Zadejte operaci (pro faktoriál a absolutní hodnotu se zobrazí výsledek)
+    3) Zadejte druhý operand
+    4) Klikněte myší na '=' nebo stiskněte klávesu 'E' na klávesnici</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

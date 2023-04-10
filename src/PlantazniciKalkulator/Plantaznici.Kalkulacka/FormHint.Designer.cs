@@ -34,6 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -88,6 +91,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -100,11 +106,45 @@
             // 
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(8, 87);
+            this.label2.Location = new System.Drawing.Point(11, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(785, 510);
+            this.label2.Size = new System.Drawing.Size(354, 214);
             this.label2.TabIndex = 3;
-            this.label2.Text = resources.GetString("label2.Text");
+            this.label2.Text = "Vstup z klávesnice:\r\n   \'E\'  -  zobrazení výsledku\r\n   \'A\'  -  absolutní hodnota\r" +
+    "\n   \'P\'  -  n-tá mocnina\r\n   \'R\'  -  n-tá odmocnina\r\n   \'F\'  -  faktoriál\r\n   \'." +
+    "\'  -  desetinná čárka";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(394, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(354, 214);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "\r\n  \'+\'  -  sčítání\r\n  \'-\'  -  odčítání\r\n  \'*\'  -  násobení\r\n  \'/\'  -  dělení\r\n  " +
+    "\'0-9\'  -  zadávání čísel\r\n  \'backspace\'  -  smazat vše\r\n";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(11, 340);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(786, 151);
+            this.label4.TabIndex = 5;
+            this.label4.Text = resources.GetString("label4.Text");
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(31, 507);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(762, 272);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Dále pokračujte buď zadáním operandu (nový příklad), nebo operace (na místo první" +
+    "ho operandu se dosadí poslední výsledek - pokračování ve výpočtu)";
             // 
             // FormHint
             // 
@@ -133,5 +173,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }

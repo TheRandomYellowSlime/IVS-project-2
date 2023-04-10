@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+ * Autoři:  Marek Kunz (xkunzm02) - vedouci
+ *          Jan Křivák (xkriva36)
+ *          Marian Pražák (xpraza11)
+ *          Kryštof Pleva (xpleva09)
+ * 
+ * Tým:     Plantážníci
+ * 
+ * */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -565,6 +575,7 @@ namespace Plantaznici.Kalkulacka
                             BtnPlus.Enabled = false;
                             BtnMinus.Enabled = false;
                             BtnEq.Enabled = false;
+                            BtnAbs.Enabled = false;
                             BtnMul.Enabled = false;
                             BtnFact.Enabled = false;
                             BtnDiv.Enabled = false;
@@ -592,6 +603,7 @@ namespace Plantaznici.Kalkulacka
                             BtnDiv.Enabled = false;
                             BtnPow.Enabled = false;
                             BtnRoot.Enabled = false;
+                            BtnAbs.Enabled = false;
                         }
                     }
                 }
@@ -778,7 +790,6 @@ namespace Plantaznici.Kalkulacka
             BtnAbs.Enabled = false;
             BtnFact.Enabled = false;
             textBox1.Text += "×";
-            SendKeys.Send("{TAB}");
         }
 
         private void BtnDiv_Click(object sender, EventArgs e)
@@ -1025,7 +1036,6 @@ namespace Plantaznici.Kalkulacka
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-
             if(e.KeyCode==Keys.Add)
             {
                 BtnPlus.PerformClick();
@@ -1096,7 +1106,7 @@ namespace Plantaznici.Kalkulacka
                 Btn9.PerformClick();
             }
 
-            if (e.KeyCode == Keys.Space)
+            if (e.KeyCode == Keys.E)
             {
                 BtnEq.PerformClick();
             }
@@ -1124,6 +1134,11 @@ namespace Plantaznici.Kalkulacka
             if (e.KeyCode == Keys.OemPeriod || e.KeyCode == Keys.Oemcomma)
             {
                 BtnComma.PerformClick();
+            }
+
+            if (e.KeyCode == Keys.Back)
+            {
+                BtnCA.PerformClick();
             }
 
         }
