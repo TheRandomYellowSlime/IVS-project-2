@@ -12,7 +12,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Plantaznici.Kalkulacka.MathLib;
-using KupeckePokty = Plantaznici.Kalkulacka.MathLib.MathLib;
+using KupeckePokty = Plantaznici.Kalkulacka.MathLib.MatematickaKnihovna;
 
 namespace Plantaznici.Kalkulacka.TDDTests
 {
