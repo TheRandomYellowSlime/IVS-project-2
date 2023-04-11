@@ -17,17 +17,3 @@ C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plant
 C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.CoreCompileInputs.cache
 C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.exe
 C:\Users\Pipex\Source\Repos\IVS-project-2-pokus9\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.pdb
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\bin\Debug\Plantaznici.Kalkulacka.exe.config
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\bin\Debug\Plantaznici.Kalkulacka.exe
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\bin\Debug\Plantaznici.Kalkulacka.pdb
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\bin\Debug\PlantazniciMathLib.dll
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\bin\Debug\PlantazniciMathLib.pdb
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.AssemblyReference.cache
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.Form1.resources
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.FormHint.resources
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.Properties.Resources.resources
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.GenerateResource.cache
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.CoreCompileInputs.cache
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.csproj.CopyComplete
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.exe
-C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\Plantaznici.Kalkulacka\obj\Debug\Plantaznici.Kalkulacka.pdb
