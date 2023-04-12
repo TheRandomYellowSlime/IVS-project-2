@@ -71,6 +71,7 @@ namespace Plantaznici.Kalkulacka.MathLib
 
         public double Umocneni(double zaklad, double exponent)
         {
+            exponent = Zaokrouhleni(exponent);
             double vysledek = 1;
             if (exponent == 0)
             {
@@ -115,6 +116,7 @@ namespace Plantaznici.Kalkulacka.MathLib
 
         public double Odmocneni(double zaklad, double exponent)
         {
+            exponent = Zaokrouhleni(exponent);
             if (exponent == 0)
             {
                 throw new ArgumentException("Nelze mit odmocninu s nulovym exponentem");
@@ -141,6 +143,11 @@ namespace Plantaznici.Kalkulacka.MathLib
                 return 1 / Odmocneni(zaklad, -exponent);
             }
 
+            if (exponent == 1)
+            {
+                return zaklad;
+            }
+
             double x = zaklad / exponent;
             double xPredchozi;
             double odchylka = 0.0000001;
@@ -161,6 +168,36 @@ namespace Plantaznici.Kalkulacka.MathLib
             else
             {
                 return n;
+            }
+        }
+
+        public double Zaokrouhleni(double n)
+        {
+            double x = (int)n;
+
+            if (n < 0)
+            {
+                if ((n - x) > -0.5)
+                {
+                    return x;
+                }
+                else
+                {
+                    x -= 1;
+                    return x;
+                }
+            }
+            else
+            {
+                if ((n - x) < 0.5)
+                {
+                    return x;
+                }
+                else
+                {
+                    x += 1;
+                    return x;
+                }
             }
         }
     }

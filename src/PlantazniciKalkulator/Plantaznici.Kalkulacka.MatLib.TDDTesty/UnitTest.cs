@@ -12,7 +12,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Plantaznici.Kalkulacka.MathLib;
-using KupeckePokty = Plantaznici.Kalkulacka.MathLib.MatematickaKnihovna;
+using KupeckePokty = Plantaznici.Kalkulacka.MathLib.MathLib;
 
 namespace Plantaznici.Kalkulacka.TDDTests
 {
@@ -152,58 +152,51 @@ namespace Plantaznici.Kalkulacka.TDDTests
         }
 
         [TestMethod]
-        public void TestUmocneni() //Implementace Funguje na bazi zaokrouhlovani exponentu
+        public void TestUmocneni()
         {
             //Testy rovnosti
             Assert.AreEqual(0, new KupeckePokty().Umocneni(0, 1));
             Assert.AreEqual(2, new KupeckePokty().Umocneni(2, 1));
-            Assert.AreEqual(0.5, new KupeckePokty().Umocneni(2, -1), presnostPoctu);
+            Assert.AreEqual(1 / 2, new KupeckePokty().Umocneni(2, -1), presnostPoctu);
             Assert.AreEqual(4, new KupeckePokty().Umocneni(2, 2));
-            Assert.AreEqual(1.0 / 4.0, new KupeckePokty().Umocneni(2, -2), presnostPoctu);
+            Assert.AreEqual(1 / 4, new KupeckePokty().Umocneni(2, -2), presnostPoctu);
             Assert.AreEqual(-27, new KupeckePokty().Umocneni(-3, 3));
-            Assert.AreEqual(-1.0 / 27.0, new KupeckePokty().Umocneni(-3, -3), presnostPoctu);
-            Assert.AreEqual(81, new KupeckePokty().Umocneni(-3, 4), presnostPoctu);
-            Assert.AreEqual(1, new KupeckePokty().Umocneni(8, 1.0 / 3.0), presnostPoctu);
-            Assert.AreEqual(8, new KupeckePokty().Umocneni(8, 1.0 / 2.0), presnostPoctu);
-            Assert.AreEqual(-1, new KupeckePokty().Umocneni(-8, 1.0 / 3.0), presnostPoctu);
-            Assert.AreEqual(-8, new KupeckePokty().Umocneni(-8, 1.0 / 2.0), presnostPoctu);
+            Assert.AreEqual(-1 / 27, new KupeckePokty().Umocneni(-3, -3), presnostPoctu);
+            Assert.AreEqual(1 / 81, new KupeckePokty().Umocneni(-3, 4), presnostPoctu);
+            Assert.AreEqual(2, new KupeckePokty().Umocneni(8, 1 / 3), presnostPoctu);
+            Assert.AreEqual(1 / 2, new KupeckePokty().Umocneni(8, -1 / 3), presnostPoctu);
+            Assert.AreEqual(-2, new KupeckePokty().Umocneni(-8, 1 / 3), presnostPoctu);
+            Assert.AreEqual(-1 / 2, new KupeckePokty().Umocneni(-8, -1 / 3), presnostPoctu);
 
             //Neplatne formaty
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Umocneni(0, 0));
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Umocneni(0, -1));
-
-            // Zapoznamkovane testy byly puvodne implementovane, ale po dukladnejsim precteni zadani nejsou potreba
+            Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Umocneni(-8, -1 / 4));
+            Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Umocneni(-254, 3 / 8));
         }
 
         [TestMethod]
-        public void TestOdmocneni() //Implementace Funguje na bazi zaokrouhlovani exponentu
+        public void TestOdmocneni()
         {
             //Testy rovnosti
             Assert.AreEqual(0, new KupeckePokty().Odmocneni(0, 2));
             Assert.AreEqual(2, new KupeckePokty().Odmocneni(2, 1));
-            Assert.AreEqual(1.0 / 2.0, new KupeckePokty().Odmocneni(2, -1), presnostPoctu);
+            Assert.AreEqual(1 / 2, new KupeckePokty().Odmocneni(2, -1), presnostPoctu);
             Assert.AreEqual(2, new KupeckePokty().Odmocneni(4, 2));
-            Assert.AreEqual(1.0 / 2.0, new KupeckePokty().Odmocneni(4, -2), presnostPoctu);
-            Assert.AreEqual(-1.0 / 3.0, new KupeckePokty().Odmocneni(-27, -3), presnostPoctu);
-            Assert.AreEqual(-3, new KupeckePokty().Odmocneni(-27, 3), presnostPoctu);
-            Assert.AreEqual(-3, new KupeckePokty().Odmocneni(-27, 2.5), presnostPoctu);
-            Assert.AreEqual(-3, new KupeckePokty().Odmocneni(-27, 3.4), presnostPoctu);
-            Assert.AreEqual(3, new KupeckePokty().Odmocneni(27, 2.5), presnostPoctu);
-            Assert.AreEqual(3, new KupeckePokty().Odmocneni(27, 3.4), presnostPoctu);
-            Assert.AreEqual(-1.0 / 3.0, new KupeckePokty().Odmocneni(-1.0 / 27.0, 3), presnostPoctu);
-            Assert.AreEqual(1.0 / 3.0, new KupeckePokty().Odmocneni(1.0 / 27.0, 3), presnostPoctu);
-            Assert.AreEqual(-1.0 / 8.0, new KupeckePokty().Odmocneni(-8, -2.0/3.0), presnostPoctu);
+            Assert.AreEqual(1 / 2, new KupeckePokty().Odmocneni(4, -2), presnostPoctu);
+            Assert.AreEqual(-1 / 3, new KupeckePokty().Odmocneni(-27, -3), presnostPoctu);
+            Assert.AreEqual(-3, new KupeckePokty().Odmocneni(-27, 3));
+            Assert.AreEqual(-1 / 27, new KupeckePokty().Odmocneni(-3, -1 / 3), presnostPoctu);
+            Assert.AreEqual(27, new KupeckePokty().Odmocneni(-3, 1 / 3), presnostPoctu);
+            Assert.AreEqual(-1 / 27, new KupeckePokty().Odmocneni(-3, -1 / 3), presnostPoctu);
+            Assert.AreEqual(-1 / 3, new KupeckePokty().Odmocneni(-1 / 27, 3), presnostPoctu);
+            Assert.AreEqual(1 / 3, new KupeckePokty().Odmocneni(1 / 27, 3), presnostPoctu);
 
             //Neplatne formaty
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(0, 0));
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(0, -2));
-            Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(-1, 2));
-            Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(-1, -4));
-            Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(-3, -1.0/3.0));
-            Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(-3, 1.0 / 3.0));
-            Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(-3, 2.1));
-
-            // Zapoznamkovane testy byly puvodne implementovane, ale po dukladnejsim precteni zadani nejsou potreba
+            Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(-8, -2 / 3));
+            Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(-12, 2 / 5));
         }
 
         [TestMethod]
@@ -223,23 +216,6 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.AreNotEqual(-5, new KupeckePokty().AbsHodnota(5));
             Assert.AreNotEqual(-120, new KupeckePokty().AbsHodnota(-120));
             Assert.AreNotEqual(-2.25, new KupeckePokty().AbsHodnota(-2.25), presnostPoctu);
-        }
-
-        [TestMethod]
-        public void TestZaokrouhleni()
-        {
-            //Testy Rovnosti
-            Assert.AreEqual(0, new KupeckePokty().Zaokrouhleni(0));
-            Assert.AreEqual(0, new KupeckePokty().Zaokrouhleni(0.3));
-            Assert.AreEqual(0, new KupeckePokty().Zaokrouhleni(-0.4));
-            Assert.AreEqual(2.0, new KupeckePokty().Zaokrouhleni(1.5));
-            Assert.AreEqual(5.0, new KupeckePokty().Zaokrouhleni(4.7));
-            Assert.AreEqual(8.0, new KupeckePokty().Zaokrouhleni(8.49));
-            Assert.AreEqual(-3.0, new KupeckePokty().Zaokrouhleni(-2.5));
-            Assert.AreEqual(-6.0, new KupeckePokty().Zaokrouhleni(-5.8));
-            Assert.AreEqual(-9.0, new KupeckePokty().Zaokrouhleni(-9.49));
-            Assert.AreEqual(1.0, new KupeckePokty().Zaokrouhleni(1.0));
-            Assert.AreEqual(-1.0, new KupeckePokty().Zaokrouhleni(-1.0));
         }
     }
 }
