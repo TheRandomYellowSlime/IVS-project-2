@@ -1,13 +1,26 @@
 ﻿/*
+ * Projekt: Plantážníci - Kalkulačka
+ *
+ * Soubor:  TestMatLib.cs
+ * 
+ * Tým:     Plantážníci
+ *
  * Autoři:  Marek Kunz (xkunzm02) - vedouci
  *          Jan Křivák (xkriva36)
  *          Marian Pražák (xpraza11)
  *          Kryštof Pleva (xpleva09)
  * 
- * Tým:     Plantážníci
+ * Popis:   Testy knihovny matematických operací
  * 
- * */
-
+ */
+/**
+ * @file TestMatLib.cs
+ * 
+ * @brief Testy knihovny matematických operací
+ * 
+ * @author Marek Kunz, Jan Křivák, Marian Pražák, Kryštof Pleva
+ *
+ */
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;

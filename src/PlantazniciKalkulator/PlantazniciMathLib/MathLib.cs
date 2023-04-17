@@ -10,7 +10,7 @@
  *          Marian Pražák (xpraza11)
  *          Kryštof Pleva (xpleva09)
  * 
- * Popis:   Třída pro knihovnu matematických operací
+ * Popis:   Knihovna matematických operací
  * 
  */
 /**

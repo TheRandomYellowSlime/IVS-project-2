@@ -1,12 +1,26 @@
 ﻿/*
+ * Projekt: Plantážníci - Kalkulačka
+ *
+ * Soubor:  Form1.cs
+ * 
+ * Tým:     Plantážníci
+ *
  * Autoři:  Marek Kunz (xkunzm02) - vedouci
  *          Jan Křivák (xkriva36)
  *          Marian Pražák (xpraza11)
  *          Kryštof Pleva (xpleva09)
  * 
- * Tým:     Plantážníci
+ * Popis:   Backend kalkulačky
  * 
- * */
+ */
+/**
+ * @file Form1.cs
+ * 
+ * @brief Backend kalkulačky
+ * 
+ * @author Marek Kunz, Jan Křivák, Marian Pražák, Kryštof Pleva
+ *
+ */
 
 using System;
 using System.Collections.Generic;
