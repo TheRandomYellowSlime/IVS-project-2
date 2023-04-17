@@ -28,6 +28,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 using Plantaznici.Kalkulacka.MathLib;
 
@@ -41,67 +42,114 @@ namespace Plantaznici.SmerodatnaOdchylka
         /// <summary>
         /// Tělo programu pro výpočet smerodatné odchylky
         /// </summary>
-        /// <param name="args"> Vstupní argumenty </param>
+        /// <exception cref="IOException"> Výjimka pro neexistující soubor </exception>
+        /// <exception cref="ArgumentException"> Výjimka pro prázdný soubor </exception>
+        /// <param name="args"> Vstupní argumenty </param>    
         static void Main(string[] args)
         {
-            MatematickaKnihovna vypocet = new MatematickaKnihovna(); //Pro praci s mat. knihovnou
+            MatematickaKnihovna vypocet = new MatematickaKnihovna();    //Pro praci s mat. knihovnou
 
-            // double vysledek = 0;            //vysledek vypoctu
-            string vstupniData = "";        //cesta k vstupnimu souboru
-            int N = 0;                      //pocet mereni
-            // double suma = 0;                //suma hodnot
-            // double aritmetickyPrumer = 0;   //aritmeticky prumer
-
-            console.ReadLine(vstupniData);
+            string vstupniData = "";                         // proměnná cesta k vstupnímu souboru
+            vstupniData = Console.ReadLine();
 
             if(!File.Exists(vstupniData))   //kontrola existence souboru
             {
-                throw new ArgumentException("Soubor neexistuje");
+                try
+                {
+                    throw new IOException("Soubor neexistuje");
+                }
+                catch (IOException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.ReadLine();
+                    return;
+                }
             }
 
-            string[] radky = File.ReadAllLines(vstupniData); //nacteni radku ze souboru
+            List<string> radky = new List<string>(File.ReadAllLines(vstupniData));  //nacteni radku ze souboru
+            List<string> cislaString = new List<string>();                          //list pro ulozeni vsech cisel jako string
 
             foreach (string radek in radky) 
             {
-                string[] dataString = line.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries); //rozdeli radek na jednotlive hodnoty
+                string[] splitString = radek.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                cislaString.AddRange(splitString);
             }
 
-            double[] dataDouble = Array.ConvertAll(dataS, double.Parse); //prevod stringu na double
-            N = dataDouble.Length;
-
-            console.WriteLine("Smerodatna odchylka: " + smerodatnaOdchylka(dataDouble, N));   //vypis vysledku
-        }
-
-        /// <summary>
-        /// Funkce pro výpočet aritmetického průměru
-        /// </summary>
-        /// <param name="dataDouble"> Pole všech čísel, se kterými pracujeme </param>
-        /// <param name="N"> Počet čísel, se kterými pracujeme </param>
-        /// <returns> Vrací hodnotu aritmetického průměru </returns>
-        private double aritmetickyPrumer(double[] dataDouble, int N)
-        {
-            double suma = 0;
-            for (int i = 0; i < N; i++)
+            List<double> cislaDouble = new List<double>();                           //list pro ulozeni vsech cisel jako double
+            foreach (string hodnoty in cislaString)
             {
-                suma = vypocet.Soucet(suma, dataDouble[i]);
+                double result;
+                if(double.TryParse(hodnoty, out result))
+                {
+                    cislaDouble.Add(result);
+                }
             }
-            return vypocet.Deleni(suma, N);
+
+            if(cislaDouble.Count == 0)  //kontrola, zda byla nactena alespon jedna hodnota
+            {
+                try
+                {
+                    throw new ArgumentException("Soubor neobsahuje zadna cisla");
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.ReadLine();
+                    return;
+                }
+            }
+
+            Console.WriteLine("Smerodatna odchylka: " + smerodatnaOdchylka(cislaDouble));   //vypis vysledku
+
+            Console.ReadLine(); // čekání na klávesu enter
         }
 
         /// <summary>
         /// Funkce pro výpočet směrodatné odchylky
         /// </summary>
-        /// <param name="dataDouble"> Pole všech čísel, se kterými pracujeme </param>
-        /// <param name="N"> Počet čísel, se kterými pracujeme </param>
+        /// <param name="cislaDouble"> List všech čísel, se kterými pracujeme </param>
+        /// <exception cref="ArgumentException"> Odmocnění záporného čísla </exception>
         /// <returns> Vrací hodnotu směrodatné odchylky </returns>
-        private double smerodatnaOdchylka(double[] dataDouble, int N)
+        private static double smerodatnaOdchylka(List<double> cislaDouble)
         {
+            MatematickaKnihovna vypocet = new MatematickaKnihovna();    //Pro praci s mat. knihovnou
             double suma = 0;
-            for (int i = 0; i < N; i++)
+            foreach (double cislo in cislaDouble)
             {
-                suma = vypocet.Soucet(suma, vypocet.Mocnina(vypocet.Rozdil(dataDouble[i], aritmetickyPrumer(double[] dataDouble, int N)), 2));
+                suma = vypocet.Scitani(suma, vypocet.Umocneni(vypocet.Odcitani(cislo, aritmetickyPrumer(cislaDouble)), 2));
             }
-            return vypocet.Odmocnina(vypocet.Deleni(suma, vypocet.rozdil(N, 1)), 2);
+            try
+            {
+                return vypocet.Odmocneni(vypocet.Deleni(suma, vypocet.Odcitani(cislaDouble.Count, 1)), 2);
+            }
+            catch (Exception)
+            {
+                return 0;
+            }
+        }
+
+        /// <summary>
+        /// Funkce pro výpočet aritmetického průměru
+        /// </summary>
+        /// <exception cref="DivideByZeroException"> Výjimka pro dělení nulou </exception>
+        /// <param name="cislaDouble"> List všech čísel, se kterými pracujeme </param>
+        /// <returns> Vrací hodnotu aritmetického průměru </returns>
+        private static double aritmetickyPrumer(List<double> cislaDouble)
+        {
+            MatematickaKnihovna vypocet = new MatematickaKnihovna();    //Pro praci s mat. knihovnou
+            double suma = 0;
+            foreach(double cislo in cislaDouble)
+            {
+                suma = vypocet.Scitani(suma, cislo);
+            }
+            try
+            {
+                return vypocet.Deleni(suma, cislaDouble.Count);
+            }
+            catch (DivideByZeroException)   //kontrola dělení nulou (oštřeno kontrolou prázného souboru)
+            {
+                return 0;
+            }           
         }
     }
 }

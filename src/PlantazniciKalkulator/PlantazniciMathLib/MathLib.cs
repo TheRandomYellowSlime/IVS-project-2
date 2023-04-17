@@ -79,7 +79,15 @@ namespace Plantaznici.Kalkulacka.MathLib
         {
             if (delitel == 0)
             {
-                throw new DivideByZeroException();
+                try
+                {
+                    throw new DivideByZeroException("Neplatne deleni nulou");
+                }
+                catch (DivideByZeroException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    throw;
+                }
             }
             else
             {
@@ -117,12 +125,28 @@ namespace Plantaznici.Kalkulacka.MathLib
                 }
                 else
                 {
-                    throw new ArgumentException("Faktorial je definovan pouze pro prirozena cisla");
+                    try
+                    {
+                        throw new ArgumentException("Faktorial je definovan pouze pro prirozena cisla");
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        throw;
+                    }
                 }
             }
             else
             {
-                throw new ArgumentException("Faktorial zaporneho cisla neni definovan");
+                try
+                {
+                    throw new ArgumentException("Faktorial zaporneho cisla neni definovan");
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    throw;
+                }
             }
         }   // Koniec funkce Faktorial
 
@@ -162,7 +186,15 @@ namespace Plantaznici.Kalkulacka.MathLib
             {
                 if (zaklad == 0)
                 {
-                    throw new ArgumentException("Nedefinovany vysledek");
+                    try
+                    {
+                        throw new ArgumentException("Nedefinovany vysledek");
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        throw;
+                    }
                 }
                 else if (zaklad < 0)
                 {
@@ -192,7 +224,15 @@ namespace Plantaznici.Kalkulacka.MathLib
                 }
                 else 
                 {
-                    throw new ArgumentException("Deleni nulou");
+                    try
+                    {
+                        throw new ArgumentException("Deleni nulou");
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        throw;
+                    }
                 }
             }
 
@@ -234,13 +274,29 @@ namespace Plantaznici.Kalkulacka.MathLib
             exponent = Zaokrouhleni(exponent);
             if (exponent == 0)
             {
-                throw new ArgumentException("Nelze mit odmocninu s nulovym exponentem");
+                try
+                {
+                    throw new ArgumentException("Nelze mit odmocninu s nulovym exponentem");
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    throw;
+                }
             }
             if (zaklad == 0)
             {
                 if (exponent < 0)
                 {
-                    throw new ArgumentException("Deleni nulou");
+                    try
+                    {
+                        throw new ArgumentException("Deleni nulou");
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        throw;
+                    }
                 }
                 else
                 {
@@ -250,7 +306,15 @@ namespace Plantaznici.Kalkulacka.MathLib
 
             if (exponent % 2 == 0 && zaklad < 0)
             {
-                throw new ArgumentException("Nelze odmocnit zaporne cislo sudym exponentem");
+                try
+                {
+                    throw new ArgumentException("Nelze odmocnit zaporne cislo sudym exponentem");
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    throw;
+                }
             }
 
             if (exponent < 0)

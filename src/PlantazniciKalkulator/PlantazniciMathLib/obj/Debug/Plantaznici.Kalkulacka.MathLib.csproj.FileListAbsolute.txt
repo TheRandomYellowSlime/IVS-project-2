@@ -36,3 +36,9 @@ C:\Users\Pipex\source\repos\IVS-project-2-PrazakM\src\PlantazniciKalkulator\Plan
 C:\Users\Pipex\source\repos\IVS-project-2-PrazakM\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\Plantaznici.Kalkulacka.MathLib.csproj.CoreCompileInputs.cache
 C:\Users\Pipex\source\repos\IVS-project-2-PrazakM\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.dll
 C:\Users\Pipex\source\repos\IVS-project-2-PrazakM\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.pdb
+C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\PlantazniciMathLib.dll
+C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\bin\Debug\PlantazniciMathLib.pdb
+C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\Plantaznici.Kalkulacka.MathLib.csproj.AssemblyReference.cache
+C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\Plantaznici.Kalkulacka.MathLib.csproj.CoreCompileInputs.cache
+C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.dll
+C:\VUT-FIT\GitHub\IVS-project-2\src\PlantazniciKalkulator\PlantazniciMathLib\obj\Debug\PlantazniciMathLib.pdb
