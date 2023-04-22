@@ -65,7 +65,8 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.AreNotEqual(-100, new KupeckePokty().Scitani(-500, 600));
             Assert.AreNotEqual(Math.PI, new KupeckePokty().Scitani(Math.PI, Math.PI), presnostPoctu);
             Assert.AreNotEqual(3, new KupeckePokty().Scitani(1.25, 1.25), presnostPoctu);
-        }
+        }   // Konec testů funkce Scitani
+
         /// <summary>
         /// Testování funkce Odcitani
         /// </summary>
@@ -95,7 +96,8 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.AreNotEqual(2.5, new KupeckePokty().Odcitani(1.25, 1.25), presnostPoctu);
             Assert.AreNotEqual(202.5, new KupeckePokty().Odcitani(-101.25, 101.25), presnostPoctu);
             Assert.AreNotEqual(2 * Math.PI, new KupeckePokty().Odcitani(Math.PI, Math.PI), presnostPoctu);
-        }
+        }   // Konec testů funkce Odcitani
+
         /// <summary>
         /// Testování funkce Nasobeni
         /// </summary>
@@ -121,7 +123,8 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.AreNotEqual(100, new KupeckePokty().Nasobeni(50, 50));
             Assert.AreNotEqual(-30, new KupeckePokty().Nasobeni(-3, -10));
             Assert.AreNotEqual(0.03, new KupeckePokty().Nasobeni(0.3, 10), presnostPoctu);
-        }
+        }   // Konec testů funkce Nasobeni
+
         /// <summary>
         /// Testování funkce Deleni
         /// </summary>
@@ -153,7 +156,8 @@ namespace Plantaznici.Kalkulacka.TDDTests
             //Test deleni nulou
 
             Assert.ThrowsException<DivideByZeroException>(() => new KupeckePokty().Deleni(-50, 0));
-        }
+        }   // Konec testů funkce Deleni
+
         /// <summary>
         /// Testování funkce Faktorial
         /// </summary>
@@ -176,7 +180,8 @@ namespace Plantaznici.Kalkulacka.TDDTests
             //Test desetineho cisla
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Faktorial(1.5));
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Faktorial(-1.5));
-        }
+        }   // Konec testů funkce Faktorial
+
         /// <summary>
         /// Testování funkce Umocneni
         /// </summary>
@@ -200,9 +205,8 @@ namespace Plantaznici.Kalkulacka.TDDTests
             //Neplatne formaty
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Umocneni(0, 0));
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Umocneni(0, -1));
+        }   // Konec testů funkce Umocneni
 
-            // Zapoznamkovane testy byly puvodne implementovane, ale po dukladnejsim precteni zadani nejsou potreba
-        }
         /// <summary>
         /// Testování funkce Odmocneni
         /// </summary>
@@ -233,9 +237,8 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(-3, -1.0/3.0));
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(-3, 1.0 / 3.0));
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Odmocneni(-3, 2.1));
+        }   // Konec testů funkce Odmocneni
 
-            // Zapoznamkovane testy byly puvodne implementovane, ale po dukladnejsim precteni zadani nejsou potreba
-        }
         /// <summary>
         /// Testování funkce AbsHodnota
         /// </summary>
@@ -256,7 +259,8 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.AreNotEqual(-5, new KupeckePokty().AbsHodnota(5));
             Assert.AreNotEqual(-120, new KupeckePokty().AbsHodnota(-120));
             Assert.AreNotEqual(-2.25, new KupeckePokty().AbsHodnota(-2.25), presnostPoctu);
-        }
+        }   // Konec testů funkce AbsHodnota
+
         /// <summary>
         /// Testování funkce Zaokrouhleni
         /// </summary>
@@ -275,6 +279,6 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.AreEqual(-9.0, new KupeckePokty().Zaokrouhleni(-9.49));
             Assert.AreEqual(1.0, new KupeckePokty().Zaokrouhleni(1.0));
             Assert.AreEqual(-1.0, new KupeckePokty().Zaokrouhleni(-1.0));
-        }
-    }
-}
+        }   // Konec testů funkce Zaokrouhleni
+    }   // Třída pro testování knihovny matematických operací
+}   // Konec testů knihovny matematických operací
