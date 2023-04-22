@@ -29,6 +29,9 @@ using KupeckePokty = Plantaznici.Kalkulacka.MathLib.MatematickaKnihovna;
 
 namespace Plantaznici.Kalkulacka.TDDTests
 {
+    /// <summary>
+    /// Třída pro testování knihovny matematických operací
+    /// </summary>
     [TestClass]
     public class TestyKnihovny
     {
@@ -36,6 +39,9 @@ namespace Plantaznici.Kalkulacka.TDDTests
         //Konstanta, pomahajici usmernit nepresnosti pri pocitani s desetinymi cisly
         const double presnostPoctu = 0.000001;
 
+        /// <summary>
+        /// Testování funkce Scitani
+        /// </summary>
         [TestMethod]
         public void TestSouctu()
         {
@@ -60,7 +66,9 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.AreNotEqual(Math.PI, new KupeckePokty().Scitani(Math.PI, Math.PI), presnostPoctu);
             Assert.AreNotEqual(3, new KupeckePokty().Scitani(1.25, 1.25), presnostPoctu);
         }
-
+        /// <summary>
+        /// Testování funkce Odcitani
+        /// </summary>
         [TestMethod]
         public void TestRozdilu()
         {
@@ -88,7 +96,9 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.AreNotEqual(202.5, new KupeckePokty().Odcitani(-101.25, 101.25), presnostPoctu);
             Assert.AreNotEqual(2 * Math.PI, new KupeckePokty().Odcitani(Math.PI, Math.PI), presnostPoctu);
         }
-
+        /// <summary>
+        /// Testování funkce Nasobeni
+        /// </summary>
         [TestMethod]
         public void TestNasobeni()
         {
@@ -112,7 +122,9 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.AreNotEqual(-30, new KupeckePokty().Nasobeni(-3, -10));
             Assert.AreNotEqual(0.03, new KupeckePokty().Nasobeni(0.3, 10), presnostPoctu);
         }
-
+        /// <summary>
+        /// Testování funkce Deleni
+        /// </summary>
         [TestMethod]
         public void TestDeleni()
         {
@@ -142,7 +154,9 @@ namespace Plantaznici.Kalkulacka.TDDTests
 
             Assert.ThrowsException<DivideByZeroException>(() => new KupeckePokty().Deleni(-50, 0));
         }
-
+        /// <summary>
+        /// Testování funkce Faktorial
+        /// </summary>
         [TestMethod]
         public void TestFaktorial()
         {
@@ -163,7 +177,9 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Faktorial(1.5));
             Assert.ThrowsException<ArgumentException>(() => new KupeckePokty().Faktorial(-1.5));
         }
-
+        /// <summary>
+        /// Testování funkce Umocneni
+        /// </summary>
         [TestMethod]
         public void TestUmocneni() //Implementace Funguje na bazi zaokrouhlovani exponentu
         {
@@ -187,7 +203,9 @@ namespace Plantaznici.Kalkulacka.TDDTests
 
             // Zapoznamkovane testy byly puvodne implementovane, ale po dukladnejsim precteni zadani nejsou potreba
         }
-
+        /// <summary>
+        /// Testování funkce Odmocneni
+        /// </summary>
         [TestMethod]
         public void TestOdmocneni() //Implementace Funguje na bazi zaokrouhlovani exponentu
         {
@@ -218,7 +236,9 @@ namespace Plantaznici.Kalkulacka.TDDTests
 
             // Zapoznamkovane testy byly puvodne implementovane, ale po dukladnejsim precteni zadani nejsou potreba
         }
-
+        /// <summary>
+        /// Testování funkce AbsHodnota
+        /// </summary>
         [TestMethod]
         public void TestAbsHodnoty()
         {
@@ -237,7 +257,9 @@ namespace Plantaznici.Kalkulacka.TDDTests
             Assert.AreNotEqual(-120, new KupeckePokty().AbsHodnota(-120));
             Assert.AreNotEqual(-2.25, new KupeckePokty().AbsHodnota(-2.25), presnostPoctu);
         }
-
+        /// <summary>
+        /// Testování funkce Zaokrouhleni
+        /// </summary>
         [TestMethod]
         public void TestZaokrouhleni()
         {

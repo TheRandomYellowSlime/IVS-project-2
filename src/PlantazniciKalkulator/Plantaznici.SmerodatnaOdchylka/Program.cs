@@ -101,7 +101,7 @@ namespace Plantaznici.SmerodatnaOdchylka
 
             Console.WriteLine("Smerodatna odchylka: " + smerodatnaOdchylka(cislaDouble));   //vypis vysledku
 
-            Console.ReadLine(); // čekání na klávesu enter
+            Console.ReadLine(); // čekání na klávesu enter (aby se okno nezavřelo)
         }
 
         /// <summary>

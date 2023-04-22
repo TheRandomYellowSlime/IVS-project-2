@@ -44,7 +44,7 @@ namespace Plantaznici.Kalkulacka.MathLib
         public double Scitani(double scitanecA, double scitanecB)
         {
             return scitanecA + scitanecB;
-        }   // Koniec funkce Scitani
+        }   // Konec funkce Scitani
 
         /// <summary>
         /// Funkce pro odčítání dvou čísel
@@ -55,7 +55,7 @@ namespace Plantaznici.Kalkulacka.MathLib
         public double Odcitani(double mensenec, double mensitel)
         {
             return mensenec - mensitel;
-        }   // Koniec funkce Odcitani
+        }   // Konec funkce Odcitani
 
         /// <summary>
         /// Funkce pro násobení dvou čísel
@@ -66,7 +66,7 @@ namespace Plantaznici.Kalkulacka.MathLib
         public double Nasobeni(double cinitelA, double cinitelB)
         {
             return cinitelA * cinitelB;
-        }   // Koniec funkce Nasobeni
+        }   // Konec funkce Nasobeni
 
         /// <summary>
         /// Funkce pro dělení dvou čísel
@@ -93,7 +93,7 @@ namespace Plantaznici.Kalkulacka.MathLib
             {
                 return delenec / delitel;
             }
-        }   // Koniec funkce Deleni
+        }   // Konec funkce Deleni
 
         /// <summary>
         /// Funkce pro výpočet faktoriálu čísla
@@ -107,7 +107,8 @@ namespace Plantaznici.Kalkulacka.MathLib
         ///         </list>
         ///     </para>
         /// </remarks>
-        /// <exception cref="ArgumentException"> Vyvolá výjimku, pokud je vstupní hodnota záporná nebo desetinná </exception>
+        /// <exception cref="ArgumentException"> Vyvolá výjimku, pokud  vstupní hodnota není přirozeným číslem </exception>
+        /// <exception cref="ArgumentException"> Vyvolá výjimku, pokud je vstupní hodnota záporná </exception>
         /// <param name="n"> Číslo, pro které hledáme faktoriál </param>
         /// <returns> Vrací hodnotu faktoriálu ze vstupní hodnoty </returns>
         public double Faktorial(double n)
@@ -148,7 +149,7 @@ namespace Plantaznici.Kalkulacka.MathLib
                     throw;
                 }
             }
-        }   // Koniec funkce Faktorial
+        }   // Konec funkce Faktorial
 
         /// <summary>
         /// Funkce pro výpočet mocniny čísla
@@ -206,14 +207,14 @@ namespace Plantaznici.Kalkulacka.MathLib
                 }
             }
 
-            if (exponent > 0)
+            if (exponent > 0)   // Výpočet mocniny pro kladné exponenty
             {
                 for (int i = 0; i < exponent; i++)
                 {
                     vysledek *= zaklad;
                 }
             }
-            else if (exponent < 0)
+            else if (exponent < 0)  // Výpočet mocniny pro záporné exponenty
             {
                 if (zaklad != 0)
                 {
@@ -330,7 +331,7 @@ namespace Plantaznici.Kalkulacka.MathLib
             double x = zaklad / exponent;
             double xPredchozi;
             double odchylka = 0.0000001;
-            do
+            do  // cyklus pro výpočet odmocniny s přesností na 7 desetinných míst
             {
                 xPredchozi = x;
                 x = ((exponent - 1.0) * x + zaklad / Umocneni(x, exponent - 1)) / exponent;
@@ -362,11 +363,11 @@ namespace Plantaznici.Kalkulacka.MathLib
         /// <returns> Vrací zaokrouhlenou hodnotu vstupní hodnoty </returns>
         public double Zaokrouhleni(double n)
         {
-            double x = (int)n;
+            double x = (int)n;  // Získání celé části čísla
 
             if (n < 0)
             {
-                if ((n - x) > -0.5)
+                if ((n - x) > -0.5) // Je-li původní číslo záporné a rozdíl mezi původním číslem a jeho celou částí větší než -0.5
                 {
                     return x;
                 }
@@ -378,7 +379,7 @@ namespace Plantaznici.Kalkulacka.MathLib
             }
             else
             {
-                if ((n - x) < 0.5)
+                if ((n - x) < 0.5)  // Je-li původní číslo kladné a rozdíl mezi původním číslem a jeho celou částí menší než 0.5
                 {
                     return x;
                 }
@@ -389,5 +390,5 @@ namespace Plantaznici.Kalkulacka.MathLib
                 }
             }
         }   // Konec funkce Zaokrouhleni
-    }
-}
+    }   // Konec třídy pro knihovnu matematických operací
+}   // Konec Knihovny matematických operací
