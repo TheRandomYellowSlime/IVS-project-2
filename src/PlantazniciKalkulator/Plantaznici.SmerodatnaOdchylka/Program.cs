@@ -69,10 +69,18 @@ namespace Plantaznici.SmerodatnaOdchylka
             List<string> radky = new List<string>(File.ReadAllLines(vstupniData));  //nacteni radku ze souboru
             List<string> cislaString = new List<string>();                          //list pro ulozeni vsech cisel jako string
 
-            foreach (string radek in radky) 
+            foreach (string radek in radky)                                         //nacteni radku ze souboru 
             {
                 string[] splitString = radek.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
                 cislaString.AddRange(splitString);
+            }
+            
+            for (int i = 0; i < cislaString.Count; i++)                              //nahrazeni desetinne tecky carkou
+            {
+                if (cislaString[i].Contains("."))
+                {
+                    cislaString[i] = cislaString[i].Replace(".", ",");
+                }
             }
 
             List<double> cislaDouble = new List<double>();                           //list pro ulozeni vsech cisel jako double
@@ -99,7 +107,7 @@ namespace Plantaznici.SmerodatnaOdchylka
                 }
             }
 
-            Console.WriteLine("Smerodatna odchylka: " + smerodatnaOdchylka(cislaDouble));   //vypis vysledku
+            Console.WriteLine(smerodatnaOdchylka(cislaDouble));   //vypis vysledku
 
             Console.ReadLine(); // čekání na klávesu enter (aby se okno nezavřelo)
         }
