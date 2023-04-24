@@ -1,1 +1,39 @@
-tento soubor bude obsahovat rozdil mezi planem projektu a skutecnou realizaci
+Plán projektu:
+・Plánované matematické funkce:
+    Sčítání
+    Odčítání
+    Násobení
+    Dělení
+    Faktoriál
+    Umocnění
+    Odmocnění
+    Absolutní hodnota
+
+・Plánované rozdělení práce:
+    xkriva36: Testy, Program
+    xkunzm02: Dokumentace, Debugging, Mockup
+    xpleva09: Makefile, Matematická knihovna
+    xpraza11: GUI, Nápověda
+
+・Plánovananá doba dokončení:
+    17.4.2023
+
+Skutečná realizace:
+・Realizované matematické funkce:
+    Sčítání
+    Odčítání
+    Násobení
+    Dělení
+    Faktoriál
+    Umocnění
+    Odmocnění
+    Absolutní hodnota
+
+・Skutečné rozdělení práce:
+    xkriva36: Testy, Program
+    xkunzm02: Dokumentace, Debugging, Profiling
+    xpleva09: Makefile, Matematická knihovna
+    xpraza11: GUI, Nápověda, Mockup
+
+・Skutečná doba dokončení:
+    23.4.2023

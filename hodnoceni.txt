@@ -1,4 +1,4 @@
-xkriva36 ... (Testy, Program)
-xkunzm02 ... (Dokumentace, Debugging)
-xpleva09 ... (Makefile, matematicka knihovna)
-xpraza11 ... (GUI, Napoveda)
+xkriva36 100 (Testy, Program)
+xkunzm02 100 (Dokumentace, Debugging, Profiling)
+xpleva09 100 (Makefile, Matematická knihovna)
+xpraza11 100 (GUI, Nápověda, Mockup)
