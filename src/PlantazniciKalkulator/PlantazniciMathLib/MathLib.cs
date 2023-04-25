@@ -28,6 +28,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// Knihovna matematických operací
+/// </summary>
 namespace Plantaznici.Kalkulacka.MathLib
 {
     /// <summary>

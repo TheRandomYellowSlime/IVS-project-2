@@ -1,4 +1,28 @@
-﻿using System;
+﻿/*
+ * Projekt: Plantážníci - Kalkulačka
+ *
+ * Soubor:  FormHint.cs
+ * 
+ * Tým:     Plantážníci
+ *
+ * Autoři:  Marek Kunz (xkunzm02) - vedouci
+ *          Jan Křivák (xkriva36)
+ *          Marian Pražák (xpraza11)
+ *          Kryštof Pleva (xpleva09)
+ * 
+ * Popis:   Backend kalkulačky
+ * 
+ */
+/**
+ * @file FormHint.cs
+ * 
+ * @brief Nápověda kalkulačky
+ * 
+ * @author Marek Kunz, Jan Křivák, Marian Pražák, Kryštof Pleva
+ *
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,8 +32,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Nápověda
+/// </summary>
 namespace Plantaznici.Kalkulacka
 {
+    /// <summary>
+    /// Třída s tělem formuláře nápovědy
+    /// </summary>
     public partial class FormHint : Form
     {
         public Point mouseLocation;

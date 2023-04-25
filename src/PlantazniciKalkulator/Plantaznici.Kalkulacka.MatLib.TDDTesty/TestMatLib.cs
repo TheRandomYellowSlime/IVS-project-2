@@ -27,6 +27,9 @@ using System;
 using Plantaznici.Kalkulacka.MathLib;
 using KupeckePokty = Plantaznici.Kalkulacka.MathLib.MatematickaKnihovna;
 
+/// <summary>
+/// Testy knihovny matematických operací
+/// </summary>
 namespace Plantaznici.Kalkulacka.TDDTests
 {
     /// <summary>

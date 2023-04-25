@@ -32,6 +32,9 @@ using System.Text.RegularExpressions;
 
 using Plantaznici.Kalkulacka.MathLib;
 
+/// <summary>
+/// Směrodatná odchylka
+/// </summary>
 namespace Plantaznici.SmerodatnaOdchylka
 {
     /// <summary>
@@ -110,7 +113,7 @@ namespace Plantaznici.SmerodatnaOdchylka
             Console.WriteLine(smerodatnaOdchylka(cislaDouble));   //vypis vysledku
 
             Console.ReadLine(); // čekání na klávesu enter (aby se okno nezavřelo)
-        }
+        }   // konec těla programu
 
         /// <summary>
         /// Funkce pro výpočet směrodatné odchylky
@@ -134,7 +137,7 @@ namespace Plantaznici.SmerodatnaOdchylka
             {
                 return 0;
             }
-        }
+        }   // konec funkce smerodatnaOdchylka
 
         /// <summary>
         /// Funkce pro výpočet aritmetického průměru
@@ -158,6 +161,6 @@ namespace Plantaznici.SmerodatnaOdchylka
             {
                 return 0;
             }           
-        }
-    }
-}
+        }   // Konec funkce aritmetickyPrumer
+    }   // Konec třídy Program
+}   // Konec programu pro výpočet směrodatné odchylky

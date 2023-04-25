@@ -3,8 +3,10 @@
     "",
     "\\src",
     "\\src\\PlantazniciKalkulator",
-    "\\src\\PlantazniciKalkulator\\Plantaznici.Kalkulacka"
+    "\\src\\PlantazniciKalkulator\\Plantaznici.Kalkulacka",
+    "\\src\\PlantazniciKalkulator\\Plantaznici.SmerodatnaOdchylka",
+    "\\src\\PlantazniciKalkulator\\PlantazniciMathLib"
   ],
-  "SelectedNode": "\\src\\PlantazniciKalkulator\\Plantaznici.Kalkulacka\\Form1.cs",
+  "SelectedNode": "\\src\\PlantazniciKalkulator\\PlantazniciMathLib\\MathLib.cs",
   "PreviewInSolutionExplorer": false
 }

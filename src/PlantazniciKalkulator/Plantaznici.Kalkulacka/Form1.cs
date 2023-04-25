@@ -35,9 +35,14 @@ using System.Windows.Forms;
 
 using Plantaznici.Kalkulacka.MathLib;
 
-
+/// <summary>
+/// Kalkulačka
+/// </summary>
 namespace Plantaznici.Kalkulacka
 {
+    /// <summary>
+    /// Třída s fungováním aplikace kalkulačky
+    /// </summary>
     public partial class Form1 : Form
     {
 
