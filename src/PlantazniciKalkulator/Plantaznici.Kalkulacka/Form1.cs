@@ -5,7 +5,7 @@
  * 
  * Tým:     Plantážníci
  *
- * Autoři:  Marek Kunz (xkunzm02) - vedouci
+ * Autoři:  Marek Kunz (xkunzm02)
  *          Jan Křivák (xkriva36)
  *          Marian Pražák (xpraza11)
  *          Kryštof Pleva (xpleva09)
